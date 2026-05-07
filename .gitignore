@@ -1,0 +1,39 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.lcov/
+
+# Build outputs
+dist/
+build/
+.out/
+
+# Misc
+.DS_Thumbs.db
+.DS_Store
+.env.local
+.env.*.local
+
+# Project specific data
+courses.json
