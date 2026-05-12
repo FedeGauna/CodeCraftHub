@@ -1,6 +1,6 @@
 # CodeCraftHub - Personal Learning Goal Tracker API
 
-A simple REST API built with Node.js and Express to help developers track courses they want to learn. This project focuses on learning REST API basics with JSON file storage.
+A simple REST API built with Node.js and Express to help developers track courses they want to learn, featuring a web dashboard for managing courses. This project focuses on learning REST API basics with JSON file storage.
 
 ## Features
 
@@ -10,7 +10,8 @@ A simple REST API built with Node.js and Express to help developers track course
 - Statistics endpoint to track learning progress
 - Search functionality for courses
 - Auto-generated IDs and timestamps
-- CORS enabled for frontend development (configured for localhost:3000)
+- Web dashboard at `/dashboard.html` for course management
+- CORS enabled for frontend development
 
 ## API Endpoints
 
@@ -115,6 +116,25 @@ curl http://localhost:5000/api/courses/stats
 curl "http://localhost:5000/api/courses/search?q=javascript"
 ```
 
+## Web Dashboard
+
+A single-page dashboard is available at `/dashboard.html` (served directly by the Express app). It provides:
+
+- **Course list** displayed as responsive cards with status badges
+- **Add course form** with validation for all required fields
+- **Edit modal** to update course details inline
+- **Delete** with confirmation dialog
+- **Toast notifications** for success/error feedback
+- **Loading states** and error handling for all API operations
+
+Built with vanilla JavaScript and CSS. No frameworks or build tools required.
+
+### How to Use
+
+1. Start the server with `npm start`
+2. Open `http://localhost:5000/dashboard.html` in your browser
+3. Use the form to add courses; edit or delete them from the card list
+
 ## Troubleshooting
 
 - **Server won't start**: Make sure you have Node.js installed and run `npm install` first
@@ -130,7 +150,9 @@ codecrafthub/
 ├── courses.json        # JSON file for data storage (auto-created)
 ├── package.json        # Node.js dependencies
 ├── README.md           # Project documentation
-└── .gitignore          # patterns to ignore in versioning
+├── .gitignore          # patterns to ignore in versioning
+└── public/
+    └── dashboard.html  # Web-based learning management dashboard
 ```
 
 ## Learning Notes

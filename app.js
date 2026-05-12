@@ -11,7 +11,10 @@ app.use(express.json());
 
 // Middleware to enable CORS for frontend development
 const cors = require('cors');
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors());
+
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Helper function to read courses from JSON file
 function readCourses() {
