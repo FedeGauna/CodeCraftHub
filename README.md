@@ -46,7 +46,7 @@ Each course has the following properties:
 3. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ## How to Run
@@ -54,13 +54,13 @@ npm install
 ### Production Mode
 
 ```bash
-npm start
+pnpm start
 ```
 
 ### Development Mode (with auto-restart)
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 The server will run on `http://localhost:5000`
@@ -131,13 +131,13 @@ Built with vanilla JavaScript and CSS. No frameworks or build tools required.
 
 ### How to Use
 
-1. Start the server with `npm start`
+1. Start the server with `pnpm start`
 2. Open `http://localhost:5000/dashboard.html` in your browser
 3. Use the form to add courses; edit or delete them from the card list
 
 ## Troubleshooting
 
-- **Server won't start**: Make sure you have Node.js installed and run `npm install` first
+- **Server won't start**: Make sure you have Node.js installed and run `pnpm install` first
 - **Port already in use**: Change the PORT constant in app.js or stop the conflicting process
 - **File permissions**: Ensure the application has read/write permissions for the courses.json file
 - **Invalid JSON**: If courses.json becomes corrupted, delete it and the API will create a new empty array

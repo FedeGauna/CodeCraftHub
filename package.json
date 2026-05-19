@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Personal learning goal tracker API",
   "main": "app.js",
+  "packageManager": "pnpm@10.33.4",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
